@@ -29,8 +29,8 @@ export function ActionIcons() {
       {/* Search - Potential addition, keeping layout clean for now */}
 
       {/* Wishlist */}
-      <Link href="/wishlist" className="hidden lg:flex">
-        <Button variant="ghost" size="icon" className="relative group hover:text-pink-600 transition-colors">
+      <Button asChild variant="ghost" size="icon" className="relative group hover:text-pink-600 transition-colors hidden lg:flex">
+        <Link href="/wishlist">
           <Heart className="h-5 w-5 group-hover:fill-pink-600 transition-all" />
           {wishlistCount > 0 && (
             <motion.div
@@ -43,12 +43,12 @@ export function ActionIcons() {
               </Badge>
             </motion.div>
           )}
-        </Button>
-      </Link>
+        </Link>
+      </Button>
 
       {/* Cart */}
-      <Link href="/cart">
-        <Button variant="ghost" size="icon" className="relative group hover:text-pink-600 transition-colors">
+      <Button asChild variant="ghost" size="icon" className="relative group hover:text-pink-600 transition-colors">
+        <Link href="/cart">
           <ShoppingBag className="h-5 w-5" />
           {cartItemCount > 0 && (
             <motion.div
@@ -61,8 +61,8 @@ export function ActionIcons() {
               </Badge>
             </motion.div>
           )}
-        </Button>
-      </Link>
+        </Link>
+      </Button>
 
       {/* Theme Toggle - Keep visible and accessible */}
       <ModeToggle />
@@ -99,10 +99,10 @@ export function ActionIcons() {
               </>
             ) : (
               <>
-                <DropdownMenuItem className="cursor-pointer py-2">
+                <DropdownMenuItem asChild className="cursor-pointer py-2">
                   <Link href="/login" className="w-full">Log in</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="cursor-pointer py-2">
+                <DropdownMenuItem asChild className="cursor-pointer py-2">
                    <Link href="/register" className="w-full">Register</Link>
                 </DropdownMenuItem>
               </>

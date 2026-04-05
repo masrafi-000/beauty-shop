@@ -8,7 +8,7 @@ export function Logo() {
         <Sparkles className="w-5 h-5 animate-pulse" />
       </div>
       <div className="flex flex-col pt-1">
-        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 font-serif leading-none italic">
+        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 font-serif leading-none">
           Lumière
         </span>
         <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-pink-500 dark:text-pink-400 mt-1">

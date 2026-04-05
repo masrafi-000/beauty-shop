@@ -126,7 +126,7 @@ export function MobileMenu() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
           >
-            <SheetTitle className="flex items-center gap-2 italic font-serif text-3xl text-pink-600 dark:text-pink-400">
+            <SheetTitle className="flex items-center gap-2 font-serif text-3xl text-pink-600 dark:text-pink-400">
                <Sparkles className="h-6 w-6 fill-current animate-pulse" />
                Lumière
             </SheetTitle>
@@ -217,7 +217,7 @@ export function MobileMenu() {
                    {user?.name?.charAt(0) || "U"}
                  </div>
                  <div className="flex flex-col overflow-hidden">
-                   <span className="font-serif italic text-2xl truncate leading-tight">{user?.name}</span>
+                   <span className="font-serif text-2xl truncate leading-tight">{user?.name}</span>
                    <span className="text-xs text-muted-foreground truncate">{user?.email}</span>
                  </div>
               </div>

@@ -106,7 +106,7 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-linear-to-r from-primary to-rose-400 font-serif italic;
+    @apply bg-clip-text text-transparent bg-linear-to-r from-primary to-rose-400 font-serif;
   }
 
   .card-hover {
